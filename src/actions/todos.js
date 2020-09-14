@@ -4,3 +4,5 @@ const addNewToDo = toDoContent => {
         payload: toDoContent // this is the DATA we are passing through to the reducer
     }
 };
+
+export {addNewToDo};
