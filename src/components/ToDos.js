@@ -9,6 +9,8 @@ function ToDos (props)
     const submitToDo = event => {
         event.preventDefault();
         props.dispatch(addNewToDo(newTask));
+
+        setnewTask('');
     }
 
     return(
