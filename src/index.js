@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {createStore} from 'redux';
 import toDosReducer from './reducers/todos';
-import { addNewToDo } from './actions/todos';
+// import { addNewToDo } from './actions/todos';
 import {Provider} from 'react-redux';
 import ToDos from './components/ToDos';
 import ToDoList from './components/ToDoList';
@@ -16,8 +16,8 @@ const store = createStore(toDosReducer,
 
 store.subscribe( () => console.log(store.getState() ) );
 
-store.dispatch( addNewToDo("Research Redux"));
-store.dispatch( addNewToDo("Review React"));
+// store.dispatch( addNewToDo("Research Redux"));
+// store.dispatch( addNewToDo("Review React"));
 
 ReactDOM.render(
   <Provider store = {store}>

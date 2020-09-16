@@ -7,7 +7,7 @@ const addNewToDo = toDoContent => {
 
 const removeToDo = id => {
     return {
-        type: 'REMOVE TO DO',
+        type: 'REMOVE_TO_DO',
         payload: id
     };
 
